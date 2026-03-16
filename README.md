@@ -14,3 +14,21 @@ Applicazione Spring per la gestione di una rubrica di contatti tramite database 
 
 Per aggiungere nuove dependencies usare l'opzione `Spring Initialirz: Add starters...`
 
+## Avvio applicazione
+
+1. Creazione del contaier per il database specificato in `docker-compose.yaml`
+
+```bash
+docker compose up mysql-db [-d]
+```
+
+2. Verificare il corretto avvio del container
+```bash
+docker compose ps
+```
+
+3. Terminare l'esecuzione del container
+```bash
+docker compose down
+```
+

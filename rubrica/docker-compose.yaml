@@ -1,0 +1,16 @@
+services:
+  mysql-db: 
+    image: mysql:9.0
+    container_name: mysql_container
+    environment:
+      MYSQL_DATABASE: rubrica_db
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "3306:3306" # mspps la porta del container alla porta di codespace
+    networks:
+        - app-network
+
+
+  # Spring-backend:
+
+
