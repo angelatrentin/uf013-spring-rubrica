@@ -13,4 +13,7 @@ services:
 
   # Spring-backend:
 
+networks:
+  app-network:
+    driver: bridge
 
