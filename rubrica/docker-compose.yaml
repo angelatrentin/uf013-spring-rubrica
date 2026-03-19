@@ -6,7 +6,7 @@ services:
       MYSQL_DATABASE: rubrica_db
       MYSQL_ROOT_PASSWORD: root
     ports:
-      - "3306:3306" # mspps la porta del container alla porta di codespace
+      - "3306:3306" # mappa la porta del container alla porta di codespace
     networks:
         - app-network
 

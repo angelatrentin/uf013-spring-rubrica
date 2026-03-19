@@ -19,7 +19,7 @@ Per aggiungere nuove dependencies usare l'opzione `Spring Initialirz: Add starte
 1. Creazione del contaier per il database specificato in `docker-compose.yaml`
 
 ```bash
-docker compose up mysql-db [-d]
+docker compose up mysql-db -d  # -d significa daemon, consente di sbloccare il terminale e non visualizzare l'output
 ```
 
 2. Verificare il corretto avvio del container
