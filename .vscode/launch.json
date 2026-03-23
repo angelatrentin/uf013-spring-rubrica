@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-RubricaApplication<rubrica>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "it.marconi.rubrica.RubricaApplication",
+            "projectName": "rubrica",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
