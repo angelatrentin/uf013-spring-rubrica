@@ -6,6 +6,7 @@ import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.servlet.ModelAndView;
 
 import it.marconi.rubrica.domain.Contact;
 import it.marconi.rubrica.domain.ContactForm;
@@ -40,4 +41,9 @@ public class ContactService {
     public Optional<Contact> get(UUID id) {
         return contactRepo.findById(id);
     }
+
+    public void deleteById(UUID id) {
+        contactRepo.deleteById(id);
+    }
+
 }

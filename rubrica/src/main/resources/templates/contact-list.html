@@ -29,7 +29,9 @@
                     <td th:text="${c.surname}"></td>
                     <td th:text="${c.phoneNumber}"></td>
                     <td th:text="${c.email}"></td>
-                    <td> </td>
+                    <td> 
+                        <a th:href="@{'/contact/delete/'+${c.id}}" method="delete" class="btn btn-danger">Elimina</a>
+                    </td>
                     <!-- operazioni sui contatti -->
                 </tr>
             </tbody>
